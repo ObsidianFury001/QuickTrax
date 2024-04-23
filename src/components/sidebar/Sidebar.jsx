@@ -44,13 +44,13 @@ function Sidebar({ isOpen, setisOpen }) {
                   text-md fond-semibold">
         <Link to="/">
           <LinkItem url="/" text="Home" 
-            icon={<IoHomeOutline size="25" />} 
+            Icon={<IoHomeOutline size="25" />} 
             filledIcon= {<IoHome size="25" />} 
             isOpen={isOpen} />
         </Link>
         <Link to="/la-calculator">
           <LinkItem url="/la-calculator" text="Loan Armotization" 
-            icon={<IoTimerOutline size="25" />}  
+            Icon={<IoTimerOutline size="25" />}  
             filledIcon={<IoTimer size="25" />}  
             isOpen={isOpen} />
         </Link>

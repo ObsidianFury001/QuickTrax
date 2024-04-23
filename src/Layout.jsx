@@ -18,17 +18,16 @@ function Layout() {
                 </div>
                 <div className="flex-1 flex flex-col">
                     <div className='w-full h-full 
-                                    p-4 overflow-y-auto
+                                    p-4 pb-10 overflow-y-auto
                                   bg-white/95   
                                     rounded-lg border-2 border-slate-300
                                     dark:border-slate-800 dark:bg-[hsl(233,50%,8%)] dark:text-slate-50
                                     '>
-                                        {/* shadow-lg shadow-gray-500/25 dark:shadow-blue-600/45  */}
-                       
+                                        {/* shadow-lg shadow-gray-500/25 dark:shadow-blue-600/45  */}                       
                         <Header />
                         <Routes>
                             <Route path='/la-calculator'
-                             element={<LoanArmotization />} />
+                             element={<LoanArmotization isOpen={isOpen} />} />
                         </Routes>
                     </div>
 
