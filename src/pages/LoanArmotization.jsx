@@ -9,6 +9,7 @@ import { Calendar as CalendarIcon } from "lucide-react"
 import { Calendar } from "@/components/ui/calendar"
 
 function LoanArmotization() {
+  const [loading, setLoading] = useState(false);
   const [Inputs, setInputs] = useState({
     loanAmount: 10000.00,
     term: 1,
@@ -25,10 +26,11 @@ function LoanArmotization() {
   };
   console.log(Inputs.loanAmount)
   return (
-    <>
-    <div className="flex w-full items-center">
-      <div className="flex w-full flex-col justify-start md:justify-center md:flex-row 
-                      items-center gap-5">
+    <form>
+    <div className="flex w-full justify-center px-3 items-center">
+      <div className="flex w-full flex-col 
+                      md:flex-row flex-wrap 
+                      gap-5">
         <div className="flex flex-col items-start space-y-2.5">
           <Label htmlFor="txtloanAmount">Loan Amount</Label>
           <Input
@@ -38,6 +40,7 @@ function LoanArmotization() {
             value={Inputs.loanAmount}
             onChange={handleInputChange}
             required
+            className="w-full md:w-36"
           />
         </div>
         <div className="flex flex-col items-start space-y-2.5">
@@ -49,6 +52,7 @@ function LoanArmotization() {
             value={Inputs.term}
             onChange={handleInputChange}
             required
+            className="w-full md:w-36"
           />
         </div>     
         <div className="flex flex-col items-start space-y-2.5">
@@ -60,6 +64,7 @@ function LoanArmotization() {
             value={Inputs.annualRate}
             onChange={handleInputChange}
             required
+            className="w-full md:w-36"
           />
         </div>
         <div className="flex flex-col items-start space-y-2.5">
@@ -71,11 +76,14 @@ function LoanArmotization() {
             value={Inputs.startDate}
             onChange={handleInputChange}
             required
+            className="w-full md:w-36"
           />
         </div>
       </div>
     </div>
-    <section className="flex justify-center items-center mt-2">
+    <section>    
+      <Divider/>
+      <div className='flex justify-center items-center mt-2'>
       {
         <Button type="submit"
           className="w-full md:w-[160px] text-md font-bold " variant="primary"
@@ -90,8 +98,9 @@ function LoanArmotization() {
           } */}Submit
         </Button>
       }
+      </div>
     </section>
-  </>
+  </form>
   )
 }
 

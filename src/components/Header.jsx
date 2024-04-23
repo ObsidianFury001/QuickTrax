@@ -13,7 +13,7 @@ function Header({title}) {
             <header className="
                     px-1 mb-4
                   bg-white/90                       
-                     text-slate-950
+                  text-slate-950
                   dark:border-slate-800 dark:bg-[hsl(233,50%,8%)] dark:text-slate-50">
                     {/* rounded-lg border-2 border-slate-300
                     shadow-lg shadow-gray-500/25 dark:shadow-blue-600/45  */}
