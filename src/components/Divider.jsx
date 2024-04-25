@@ -4,7 +4,7 @@ function Divider() {
   return (   
     <div className="border-b border-gray-200 dark:border-gray-700
                     border-2 rounded-md
-                    m-4">
+                    my-4">
     </div>
   )
 }

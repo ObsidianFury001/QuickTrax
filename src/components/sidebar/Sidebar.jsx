@@ -25,14 +25,14 @@ function Sidebar({ isOpen, setisOpen }) {
             <h1 className='text-lg font-semibold'>QuickTrax</h1>
             <Button variant="default" size="icon" className="rotate-0"
               onClick={() => setisOpen(false)}>
-              <LuChevronLeft size="25"/>
+              <LuChevronLeft size="20"/>
             </Button>
           </>
           :
           <>
             <Button variant="default" size="icon" className="rotate-180"
               onClick={() => setisOpen(true)}>
-              <LuChevronLeft />
+              <LuChevronLeft size="20"/>
             </Button>
           </>
         }
@@ -40,18 +40,18 @@ function Sidebar({ isOpen, setisOpen }) {
       <nav
         className="w-full h-full 
                   px-2
-                  flex flex-col gap-2 
+                  flex flex-col gap-4 
                   text-md fond-semibold">
         <Link to="/">
           <LinkItem url="/" text="Home" 
-            Icon={<IoHomeOutline size="25" />} 
-            filledIcon= {<IoHome size="25" />} 
+            Icon={<IoHomeOutline size="20" />} 
+            IconFilled= {<IoHome size="20" />} 
             isOpen={isOpen} />
         </Link>
         <Link to="/la-calculator">
           <LinkItem url="/la-calculator" text="Loan Armotization" 
-            Icon={<IoTimerOutline size="25" />}  
-            filledIcon={<IoTimer size="25" />}  
+            Icon={<IoTimerOutline size="20" />}  
+            IconFilled={<IoTimer size="20" />}  
             isOpen={isOpen} />
         </Link>
       </nav>
